@@ -1,6 +1,11 @@
-| source_field | target_field | transform_rule |
-|--------------|--------------|----------------|
-| first_name   | FIRST_NAME   | uppercase     |
-| last_name    | LAST_NAME    | uppercase     |
-| age          | AGE          | direct        |
-| email        | EMAIL        | lowercase      |
+| source_field | target_field     | transform_rule      |
+|--------------|------------------|---------------------|
+| first_name   | FIRST_NAME       | uppercase          |
+| last_name    | LAST_NAME        | uppercase          |
+| age          | AGE              | direct             |
+| email        | EMAIL            | lowercase          |
+| first_name   | SHORT_NAME       | first_three_chars  |
+| last_name    | DOMAIN           | extract_domain     |
+| age          | AGE_GROUP        | age_category       |
+| email        | EMAIL_USERNAME   | before_at          |
+| first_name   | INITIALS         | first_letter       |

@@ -1,4 +1,14 @@
-| first_name | last_name | age | email                |
-|------------|-----------|-----|----------------------|
-| John       | Doe       | 30  | john.doe@example.com |
-| Jane       | Smith     | 25  | jane.s@example.com   |
+| first_name | last_name | age | email                    |
+|------------|-----------|-----|--------------------------|
+| John       | Doe       | 30  | john.doe@example.com     |
+| Jane       | Smith     | 25  | jane.s@example.com       |
+| Robert     | Johnson   | 45  | rob.j@example.com        |
+| Maria      | Garcia    | 28  | maria.g@example.com      |
+| David      | Brown     | 35  | david.brown@example.com  |
+| Sarah      | Wilson    | 42  | sarah.w@example.com      |
+| Michael    | Taylor    | 33  | mike.t@example.com       |
+| Emma       | Anderson  | 29  | emma.a@example.com       |
+| James      | Martinez  | 38  | james.m@example.com      |
+| Lisa       | Thompson  | 31  | lisa.t@example.com       |
+| William    | White     | 47  | will.w@example.com       |
+| Sophie     | Clark     | 26  | sophie.c@example.com     |
