@@ -1,0 +1,6 @@
+| source_field | target_field | transform_rule |
+|--------------|--------------|----------------|
+| first_name   | FIRST_NAME   | uppercase     |
+| last_name    | LAST_NAME    | uppercase     |
+| age          | AGE          | direct        |
+| email        | EMAIL        | lowercase      |
