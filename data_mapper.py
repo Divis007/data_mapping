@@ -113,6 +113,9 @@ def analyze_data_structure(file_path: str) -> Dict:
             analysis['suggested_mappings'][column] = suggest_transformation(column_analysis)
         
         return analysis
+    except Exception as e:
+        print(f"Error analyzing data structure: {str(e)}")
+        raise
 
 def detect_patterns(series: pd.Series) -> Dict:
     """Detect common patterns in data"""
