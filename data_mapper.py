@@ -111,6 +111,8 @@ def analyze_data_structure(file_path: str) -> Dict:
             }
             analysis['columns'][column] = column_analysis
             analysis['suggested_mappings'][column] = suggest_transformation(column_analysis)
+            print("within analyze_data_structure for loop")
+            print(analysis['suggested_mappings'][column])
         
         return analysis
     except Exception as e:
@@ -170,9 +172,9 @@ def similar_patterns(source_info: Dict, target_info: Dict) -> bool:
 if __name__ == "__main__":    
     # Use relative paths to avoid path issues
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    input_file = os.path.join(base_dir, 'sample_input.xlsx')
-    mapping_file = os.path.join(base_dir, 'mapping_rules.xlsx')
-    output_file = os.path.join(base_dir, 'mapped_output.xlsx')
+    input_file = "C:\\Users\\kchhatbar\\OneDrive - Deloitte (O365D)\\Documents\\AMEX\\copilot\\data_mapping\\sample_input.xlsx"
+    mapping_file = "C:\\Users\\kchhatbar\\OneDrive - Deloitte (O365D)\\Documents\\AMEX\\copilot\\data_mapping\\mapping_rules.xlsx"
+    output_file = "C:\\Users\\kchhatbar\\OneDrive - Deloitte (O365D)\\Documents\\AMEX\\copilot\\data_mapping\\mapped_output.xlsx"
     
     perform_data_mapping(input_file, mapping_file, output_file)
     
@@ -180,7 +182,9 @@ if __name__ == "__main__":
     print("\nReverse Engineering Analysis:")
     analysis = analyze_data_structure(input_file)
     print("\nData Structure Analysis:")
+    print(analysis)
     for column, info in analysis['columns'].items():
+        print(info)
         print(f"\nColumn: {column}")
         print(f"Data Type: {info['data_type']}")
         print(f"Sample Values: {info['sample_values']}")
